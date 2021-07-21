@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 05 ReactJS</title>
+    <link rel="stylesheet" type="text/css" href="./style_search.css" />
+    <script src="./script_search.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <header id="navbar">
+          <h2 class="logo">G2 ACADEMY <br> BOOTCAMP</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </header>
+
+        <div class="bagian">
+            <!-- Bagian Section -->
+            <div class="button">
+              <div class="search">
+                  <!-- Bagian Input Atau Search Data -->
+                <input
+                  type="text"
+                  class="input"
+                  onkeyup="Search()"
+                  placeholder="Search Data Here"
+                  title="Type in a name"
+                />
+              </div>
+            </div>
+
+             <!-- Bagian Jumlah Data Yang Ditampilkan -->
+             <div class="entries">
+                Menampilkan
+                <select class="entrie">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option></select>
+                  Data
+              </div>
+    
+              <!-- Bagian Tabel -->
+            <div class="tabel"></div>
+    
+            <!-- Bagian Pop Up Gambar -->
+            <div id="PopUp" class="Pop">
+              <span class="close">&times;</span>
+              <img class="PopUpStyle" id="image" />
+              <div id="cap"></div>
+            </div>
+
+          </div>
+
+          <!-- Bagian Pagination -->
+          <div class="pagination"></div>
+    </section>
+    <footer>Bootcamp G2 Academy | Class Bootcamp Mei 2021</footer>
+  </body>
+</html>
